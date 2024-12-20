@@ -45,9 +45,9 @@ pub fn get_pool_sub_id(pool_id: &PoolId) -> Bytes32 {
     hasher.update(*pool_id.0);
     hasher.update(*pool_id.1);
     if pool_id.2 {
-        hasher.write(&[1]).unwrap();
+        hasher.write_all(&[1]).unwrap();
     } else {
-        hasher.write(&[0]).unwrap();
+        hasher.write_all(&[0]).unwrap();
     }
     Bytes32::from(<[u8; 32]>::from(hasher.finalize()))
 }

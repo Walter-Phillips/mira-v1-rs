@@ -16,27 +16,27 @@ pub const SWAP_EXACT_OUTPUT_SCRIPT_BINARY_PATH: &str =
 abigen!(
     Script(
         name = "AddLiquidityScript",
-        abi = "sway-abis/add_liquidity_script/release/add_liquidity_script-abi.json"
+        abi = "packages/mira-v1/sway-abis/add_liquidity_script/release/add_liquidity_script-abi.json"
     ),
     Script(
         name = "CreatePoolAndAddLiquidityScript",
-        abi = "sway-abis/create_pool_and_add_liquidity_script/release/create_pool_and_add_liquidity_script-abi.json"
+        abi = "packages/mira-v1/sway-abis/create_pool_and_add_liquidity_script/release/create_pool_and_add_liquidity_script-abi.json"
     ),
     Script(
         name = "RemoveLiquidityScript",
-        abi = "sway-abis/remove_liquidity_script/release/remove_liquidity_script-abi.json"
+        abi = "packages/mira-v1/sway-abis/remove_liquidity_script/release/remove_liquidity_script-abi.json"
     ),
     Script(
         name = "SwapExactInputScript",
-        abi = "sway-abis/swap_exact_input_script/release/swap_exact_input_script-abi.json"
+        abi = "packages/mira-v1/sway-abis/swap_exact_input_script/release/swap_exact_input_script-abi.json"
     ),
     Script(
         name = "SwapExactOutputScript",
-        abi = "sway-abis/swap_exact_output_script/release/swap_exact_output_script-abi.json"
+        abi = "packages/mira-v1/sway-abis/swap_exact_output_script/release/swap_exact_output_script-abi.json"
     ),
     Contract(
         name = "MiraAmmContract",
-        abi = "sway-abis/mira_amm_contract/release/mira_amm_contract-abi.json"
+        abi = "packages/mira-v1/sway-abis/mira_amm_contract/release/mira_amm_contract-abi.json"
     ),
 );
 
